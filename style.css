@@ -1,0 +1,200 @@
+body {
+  background: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px;
+  font-weight: 400;
+}
+.conteiner {
+  width: 1200px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+#left-side {
+  background: #1e2a3a;
+  color: #ffffff;
+  max-width: 370px;
+  min-height: 370px;
+}
+
+.photo {
+  width: 370px;
+  border-right: 1px #1e2a3a;
+}
+
+.bio,
+.education {
+  margin-bottom: 60px;
+}
+
+#right-side {
+  padding: 80px 200px 80px 80px;
+  max-width: 830px;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.bio-occupation {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 30px;
+}
+
+.bio-about {
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.bio-title,
+.bio-occupation {
+  color: #2a2a2a;
+}
+
+.projects-link:hover {
+  color: #ff6b08;
+}
+
+.contacts-title {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contacts-item {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+
+.contact-link-email {
+  text-decoration: underline;
+  padding-left: 16px;
+}
+
+.contact-link:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 22px;
+  line-height: 22px;
+  color: #2a2a2a;
+  margin-bottom: 30px;
+}
+
+
+
+.occupation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2a2a2a;
+  margin-bottom: 16px;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 15px;
+  font-feature-settings: 'ordn' on;
+  color: #828282;
+  margin-bottom: 16px;
+}
+
+.accent {
+  color: #ff6b08;
+}
+
+.skills-title {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+.skills-title.skills-title-m {
+  margin-top: 60px;
+}
+
+.skills-item {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-item::before {
+  content: '\2022';
+  color: #ff6b08;
+  margin-right: 18px;
+}
+
+.photo,
+.contact,
+.skills {
+  margin-bottom: 60px;
+}
+
+.contact,
+.skills {
+  padding-left: 40px;
+}
+
+.code__link {
+  text-decoration: none;
+  color: black;
+}
+.code__link:hover {
+  color: red;
+}
+
+code pre {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  max-width: 100%;
+}
+
+.certificates {
+  display: flex;
+
+  justify-content:space-between;
+}
+
+.certificates__itea img,
+.certificates__netologi img{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.certificates__title {
+  text-align: center;
+}
+
+.code__title {
+  margin: 0;
+}
+
+.code__header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
