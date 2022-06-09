@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <title>Ryzhykov Vladyslav</title>
+  <link rel="icon" href="./assets/favicon.ico">
+  <title>CV</title>
 </head>
 <body>
   <div class="conteiner">
@@ -46,9 +47,6 @@
           <li class="skills-item">Teamwork</li>
         </ul>
       </section>
-<!--       <section class="skills">
-        <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="">
-      </section> -->
     </aside>
     <div class="right-side">
       <header class="header__menu menu">
@@ -57,9 +55,9 @@
             <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
             <li class="menu__item"><a href="#tech-skills" class="menu__link">Tech Skills</a></li>
             <li class="menu__item"><a href="#soft-skills" class="menu__link">Soft Skills</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Code Example</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Languagess</a></li>
+            <li class="menu__item"><a href="#code" class="menu__link">Code Example</a></li>
+            <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+            <li class="menu__item"><a href="#project" class="menu__link">Education</a></li>
           </ul>
         </nav>
       </header>
@@ -69,23 +67,22 @@
           <h3 class="bio-occupation">Front-end developer</h3>
           <p class="bio-about">At the age of 28, he began to study front-end development. Over the course of the year, I am getting closer to my goal, namely to become a front-end developer by the age of 30. Every day I watch video tutorials, read articles, write code. So far, there is no commercial experience, but I feel that it will appear soon. To learn something new, I go through courses all the time.</p>
         </section>
-        <section class="code">
-            <div class="code__header">
-              <h2 class="main-title code__title">Code Example</h2>
-              <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="codewars-badge">
-            </div>
-            <a href="https://www.codewars.com/kata/5f6d533e1475f30001e47514" class="code__link">Consecutive items</a>
+        <section id="code" class="code">
+          <div class="code__header">
+            <h2 class="main-title code__title">Code Example</h2>
+            <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="codewars-badge">
+          </div>
+          <a href="https://www.codewars.com/kata/5f6d533e1475f30001e47514" class="code__link">Consecutive items</a>
+          <pre>
             <code>
-              <pre>
-                function consecutive(arr, a, b) {
-                  return (arr.join(' ').indexOf(`${a} ${b}`) == -1
-                  && arr.join(' ').indexOf(`${b} ${a}`) == -1) ? false : true;
-                }
-              </pre>
+              function consecutive(arr, a, b) {
+                return (arr.join(' ').indexOf(`${a} ${b}`) == -1
+                && arr.join(' ').indexOf(`${b} ${a}`) == -1) ? false : true;
+              }
             </code>
-          </section>
-  
-        <section class="education">
+          </pre>
+        </section>
+        <section id="education" class="education">
           <div class="university">
             <h2 class="main-title  education__title">Education</h2>
             <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
@@ -96,22 +93,30 @@
             <div class="certificates">
               <div class="certificates__itea">
                 <h3 class="certificates__title">ITEA HTML&CSS Masterclass</h3>
-                <img src="./assets/img/certificate-dark.jpg" alt="certificate">
+                <img src="./assets/img/certificate/certificate-dark.jpg" alt="certificate">
               </div>
               <div class="certificates__netologi">
                 <h3 class="certificates__title">Netology Site layout</h3>
-                <img src="./assets/img/certificate-light.jpg" alt="certificate">
+                <img src="./assets/img/certificate/certificate-light.jpg" alt="certificate">
               </div>
             </div>
-            <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
-            <p class="time">September 2009 - June 2013</p>
           </div>
-  
-          <div class="languagess">
-            <h2 class="main-title ">Languagess</h2>
-            <div class="occupation">Russian Native language</div>
-            <div class="occupation">English Beginner/Elementary</div>
+          <div class="languages">
+            <h2 class="main-title languages__title">Languagess</h2>
+            <ul class="languages__list">
+              <li class="languages__item">Russian Native language</li>
+              <li class="languages__item">English Beginner/Elementary</li>
+            </ul>
           </div>
+        </section>
+        <section id="project" class="project">
+          <h2 class="main-title  education__title">My projects</h2>
+          <ol class="project__list">
+            <li class="project__item"><a href="https://enterit30.github.io/intensive_tetris/" target="_blank">Tetris</a></li>
+            <li class="project__item"><a href="https://enterit30.github.io/aim-game__intensive/" target="_blank">Aim Training</a></li>
+            <li class="project__item"><a href="https://enterit30.github.io/js-marathon__mk/" target="_blank">Mortal Kombat</a></li>
+            <li class="project__item"><a href="https://enterit30.github.io/color-board__intensive/" target="_blank">Color-board</a></li>
+          </ol>
         </section>
       </main>
       <footer class="footer">
@@ -120,7 +125,7 @@
         </div>
         <div class="footer__center">
           <div class="footer__logo logo-rs">
-            <a href="https://rs.school/js/" target="_blank" class="rs__link"><img src="assets/img/logo/rs_school_js.svg" alt="rs-school_logo"></a> 
+            <a href="https://rs.school/js/" target="_blank" class="rs__link"><img src="./assets/img/logo/rs_school_js.svg" alt="rs-school_logo"></a>
           </div>
         </div>
         <div class="footer__right">
@@ -148,7 +153,6 @@
           </ul>
         </div>
       </footer>
-
     </div>
   </div>
 </body>
