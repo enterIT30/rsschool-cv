@@ -12,6 +12,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth; 
 }
@@ -22,37 +23,65 @@ body {
   padding: 40px;
   font-weight: 400;
 }
+
 .conteiner {
-  width: 1200px;
-  background: #ffffff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-#left-side {
-  max-width: 370px;
-  min-height: 370px;
+
+.left-side {
+  flex: 0 0 370px;
   background: #100D10;
   color: #ffffff;
+}
+
+.right-side {
+  flex: 0 0 830px;
 }
 
 .photo {
   width: 370px;
   border-right: 1px #1e2a3a;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  
 }
+
+.aside-title {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.photo {
+  margin-bottom: 40px;
+}
+
+.contact,
+.soft-skills,
+.tech-skills {
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .bio,
 .education {
   margin-bottom: 60px;
 }
 
-#right-side {
-  /* padding: 0px 200px 80px 80px; */
-  max-width: 830px;
-}
+
 
 
 .header__menu, .footer {
@@ -173,10 +202,6 @@ body {
   color: #ff6b08;
 }
 
-.contacts-title {
-  font-size: 22px;
-  line-height: 27px;
-}
 
 .contact-list {
   list-style: none;
@@ -233,14 +258,7 @@ body {
   color: #ff6b08;
 }
 
-.skills-title {
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 60px;
-}
-.skills-title.skills-title-m {
-  margin-top: 60px;
-}
+
 
 .skills-item {
   font-size: 14px;
@@ -259,16 +277,9 @@ body {
   margin-right: 18px;
 }
 
-.photo,
-.contact,
-.skills {
-  margin-bottom: 60px;
-}
 
-.contact,
-.skills {
-  padding-left: 40px;
-}
+
+
 
 .code__link {
   text-decoration: none;
