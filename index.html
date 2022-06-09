@@ -7,13 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Ryzhykov Vladyslav</title>
 </head>
 <body>
   <div class="conteiner">
     <aside id="left-side">
-        <img class="photo" src="images/my-photo.jpg" alt="avatar" width="370" height="370">
+        <img class="photo" src="./assets/img/my-photo.jpg" alt="avatar" width="370" height="370">
         <section class="contact">
         <h2 class="contact-title">Contact</h2>
         <ul class="contact-list">
@@ -47,56 +47,105 @@
         </section>
     </aside>
     <div id="right-side">
-      <section class="bio">
-        <h1 class="bio-title">Vladyslav Ryzhykov</h1>
-        <h3 class="bio-occupation">Front-end developer</h3>
-        <p class="bio-about">At the age of 28, he began to study front-end development. Over the course of the year, I am getting closer to my goal, namely to become a front-end developer by the age of 30. Every day I watch video tutorials, read articles, write code. So far, there is no commercial experience, but I feel that it will appear soon. To learn something new, I go through courses all the time.</p>
-      </section>
-
-      <section class="code">
-          <div class="code__header">
-            <h2 class="title code__title">Code Example</h2>
-            <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="">
-          </div>
-          <a href="https://www.codewars.com/kata/5f6d533e1475f30001e47514" class="code__link">Consecutive items</a>
-          <code>
-            <pre>
-              function consecutive(arr, a, b) {
-                return (arr.join(' ').indexOf(`${a} ${b}`) == -1 
-                && arr.join(' ').indexOf(`${b} ${a}`) == -1) ? false : true;
-              }
-            </pre>
-          </code>
+      <header class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Tech Skills</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Soft Skills</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Code Example</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Languagess</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="bio">
+          <h1 class="bio-title">Vladyslav Ryzhykov</h1>
+          <h3 class="bio-occupation">Front-end developer</h3>
+          <p class="bio-about">At the age of 28, he began to study front-end development. Over the course of the year, I am getting closer to my goal, namely to become a front-end developer by the age of 30. Every day I watch video tutorials, read articles, write code. So far, there is no commercial experience, but I feel that it will appear soon. To learn something new, I go through courses all the time.</p>
         </section>
-
-      <section class="education">
-        <div class="university">
-          <h2 class="title education__title">Education</h2>
-          <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
-          <p class="time">September 2009 - June 2013</p>
-        </div>
-        <div class="courses">
-          <h2 class="title courses__title">Courses & Certificates</h2>
-          <div class="certificates">
-            <div class="certificates__itea">
-              <h3 class="certificates__title">ITEA HTML&CSS Masterclass</h3>
-              <img src="images/certificate-dark.jpg" alt="certificate">
+  
+        <section class="code">
+            <div class="code__header">
+              <h2 class="title code__title">Code Example</h2>
+              <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="">
             </div>
-            <div class="certificates__netologi">
-              <h3 class="certificates__title">Netology Site layout</h3>
-              <img src="images/certificate-light.jpg" alt="certificate">
-            </div>
+            <a href="https://www.codewars.com/kata/5f6d533e1475f30001e47514" class="code__link">Consecutive items</a>
+            <code>
+              <pre>
+                function consecutive(arr, a, b) {
+                  return (arr.join(' ').indexOf(`${a} ${b}`) == -1 
+                  && arr.join(' ').indexOf(`${b} ${a}`) == -1) ? false : true;
+                }
+              </pre>
+            </code>
+          </section>
+  
+        <section class="education">
+          <div class="university">
+            <h2 class="title education__title">Education</h2>
+            <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
+            <p class="time">September 2009 - June 2013</p>
           </div>
-          <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
-          <p class="time">September 2009 - June 2013</p>
+          <div class="courses">
+            <h2 class="title courses__title">Courses & Certificates</h2>
+            <div class="certificates">
+              <div class="certificates__itea">
+                <h3 class="certificates__title">ITEA HTML&CSS Masterclass</h3>
+                <img src="./assets/img/certificate-dark.jpg" alt="certificate">
+              </div>
+              <div class="certificates__netologi">
+                <h3 class="certificates__title">Netology Site layout</h3>
+                <img src="./assets/img/certificate-light.jpg" alt="certificate">
+              </div>
+            </div>
+            <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
+            <p class="time">September 2009 - June 2013</p>
+          </div>
+  
+          <div class="languagess">
+            <h2 class="title">Languagess</h2>
+            <div class="occupation">Russian Native language</div>
+            <div class="occupation">English Beginner/Elementary</div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__left">
+          <div class="footer__create">created in 2022</div>
         </div>
+        <div class="footer__center">
+          <div class="footer__logo logo-rs">
+            <a href="https://rs.school/js/" target="_blank" class="rs__link"><img src="assets/img/logo/rs_school_js.svg" alt="rs-school_logo"></a> 
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__social-links social-links">
+            <li class="social-links__item">
+              <a href="https://github.com/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/github.png" alt="logo-github">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.codewars.com/users/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/codewars.png" alt="logo-codewars">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://t.me/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/telegram.png" alt="logo-telegram">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.youtube.com/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/youtube.png" alt="logo-youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
 
-        <div class="languagess">
-          <h2 class="title">Languagess</h2>
-          <div class="occupation">Russian Native language</div>
-          <div class="occupation">English Beginner/Elementary</div>
-        </div>
-      </section>
     </div>
   </div>
 </body>
