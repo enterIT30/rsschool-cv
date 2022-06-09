@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/favicon.ico">
+  <title>CV</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="left-side">
+      <div class="photo">
+        <img class="photo" src="./assets/img/my-photo.jpg" alt="avatar" width="370" height="370">
+      </div>
+      <section id="contact" class="contact">
+        <h2 class="contact-title aside-title">Contact</h2>
+        <ul class="contact-list">
+          <li class="contacts-item">Phone:<a href="tel:+79185187781" class="contact-link">+7 (918) 518-77-81</a></li>
+          <li class="contacts-item">Email:<a href="mailto:ryzhy_kot@mail.ru" class="contact-link contact-link-email">ryzhy_kot@mail.ru</a></li>
+        </ul>
+      </section>
+      <section id="tech-skills" class="tech-skills">
+        <h2 class="skills-title aside-title">Tech Skills</h2>
+        <ul class="skills-list">
+            <li class="skills-item">HTML</li>
+            <li class="skills-item">CSS</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">Git</li>
+            <li class="skills-item">BEM</li>
+            <li class="skills-item">SASS</li>
+            <li class="skills-item">Gulp</li>
+            <li class="skills-item">Figma</li>
+        </ul>
+      </section>
+      <section id="soft-skills" class="soft-skills">
+        <h2 class="skills-title aside-title">Soft Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">Scrum</li>
+          <li class="skills-item">Agile</li>
+          <li class="skills-item">GTD</li>
+          <li class="skills-item">Teamwork</li>
+        </ul>
+      </section>
+    </aside>
+    <div class="right-side">
+      <header class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#tech-skills" class="menu__link">Tech Skills</a></li>
+            <li class="menu__item"><a href="#soft-skills" class="menu__link">Soft Skills</a></li>
+            <li class="menu__item"><a href="#code" class="menu__link">Code Example</a></li>
+            <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+            <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="bio">
+          <h1 class="bio-title">Vladyslav Ryzhykov</h1>
+          <h3 class="bio-occupation">Front-end developer</h3>
+          <p class="bio-about">At the age of 28, he began to study front-end development. Over the course of the year, I am getting closer to my goal, namely to become a front-end developer by the age of 30. Every day I watch video tutorials, read articles, write code. So far, there is no commercial experience, but I feel that it will appear soon. To learn something new, I go through courses all the time.</p>
+        </section>
+        <section id="code" class="code">
+          <div class="code__header">
+            <h2 class="main-title code__title">Code Example</h2>
+            <img src="https://www.codewars.com/users/enterIT30/badges/micro" alt="codewars-badge">
+          </div>
+          <a href="https://www.codewars.com/kata/5f6d533e1475f30001e47514" class="code__link">Consecutive items</a>
+          <pre>
+            <code>
+              function consecutive(arr, a, b) {
+                return (arr.join(' ').indexOf(`${a} ${b}`) == -1
+                && arr.join(' ').indexOf(`${b} ${a}`) == -1) ? false : true;
+              }
+            </code>
+          </pre>
+        </section>
+        <section id="education" class="education">
+          <div class="university">
+            <h2 class="main-title  education__title">Education</h2>
+            <h3 class="occupation">Mining engineer, <span class="accent">Donbass State Technical University</span></h3>
+            <p class="time">September 2009 - June 2013</p>
+          </div>
+          <div class="courses">
+            <h2 class="main-title  courses__title">Courses & Certificates</h2>
+            <div class="certificates">
+              <div class="certificates__itea">
+                <h3 class="certificates__title">ITEA HTML&CSS Masterclass</h3>
+                <img src="./assets/img/certificate/certificate-dark.jpg" alt="certificate">
+              </div>
+              <div class="certificates__netologi">
+                <h3 class="certificates__title">Netology Site layout</h3>
+                <img src="./assets/img/certificate/certificate-light.jpg" alt="certificate">
+              </div>
+            </div>
+          </div>
+          <div class="languages">
+            <h2 class="main-title languages__title">Languagess</h2>
+            <ul class="languages__list">
+              <li class="languages__item">Russian Native language</li>
+              <li class="languages__item">English Beginner/Elementary</li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects" class="projects">
+          <h2 class="main-title  education__title">My projects</h2>
+          <ol class="projects__list">
+            <li class="projects__item"><a href="https://enterit30.github.io/intensive_tetris/" target="_blank">Tetris</a></li>
+            <li class="projects__item"><a href="https://enterit30.github.io/aim-game__intensive/" target="_blank">Aim Training</a></li>
+            <li class="projects__item"><a href="https://enterit30.github.io/js-marathon__mk/" target="_blank">Mortal Kombat</a></li>
+            <li class="projects__item"><a href="https://enterit30.github.io/color-board__intensive/" target="_blank">Color-board</a></li>
+          </ol>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__left">
+          <div class="footer__create">created in 2022</div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__logo logo-rs">
+            <a href="https://rs.school/js/" target="_blank" class="rs__link"><img src="./assets/img/logo/rs_school_js.svg" alt="rs-school_logo"></a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__social-links social-links">
+            <li class="social-links__item">
+              <a href="https://github.com/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/github.png" alt="logo-github">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.codewars.com/users/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/codewars.png" alt="logo-codewars">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://t.me/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/telegram.png" alt="logo-telegram">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.youtube.com/enterIT30" target="_blank" class="social-links__link">
+                <img src="./assets/img/social-links/youtube.png" alt="logo-youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
